@@ -1,0 +1,8 @@
+from PyPDF2 import PdfFileReader
+pdf = PdfFileReader(open('I://ppp.pdf','rb'))
+print(pdf.getNumPages())
+print(pdf.getDocumentInfo())
+all_details = pdf.getDocumentInfo()
+print(all_details)
+print(all_details['/Author'])
+print(all_details['/Title'])
